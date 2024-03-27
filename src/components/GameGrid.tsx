@@ -13,10 +13,7 @@ const GameGrid = () => {
       {games.map(game=> ( 
         <GameCard key={game.id} game={game}/>
       ) )}
-
-
     </SimpleGrid>
-    
     </>
   )
 }
