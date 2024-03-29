@@ -7,13 +7,12 @@ import GameCardContainer from "./GameCardContainer";
 
 const GameGrid = () => {
     const {games, error,loading} = useGames()
-
     const skeletons = [1,2,3,4,5,6,7,8]
 
   return (
     <>
     {error && <Text>{error}</Text>}
-    <SimpleGrid columns={{sm:1, md:2, lg:3, xl:4}} padding='10px' spacing='10px'>
+    <SimpleGrid columns={{sm:1, md:2, lg:3}} padding='10px' spacing='10px'>
       {loading && skeletons.map(skeleton=>
       <GameCardContainer>
         <GameCardSkeleton key={skeleton}/>
