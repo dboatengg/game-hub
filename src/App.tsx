@@ -19,7 +19,7 @@ export interface GameQuery {
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery)
 
-  return <Grid templateAreas={{
+  return <Grid marginBottom='70px' templateAreas={{
     base: `"nav" "main"`,
     lg: `"nav nav" "aside main"`
   }}
